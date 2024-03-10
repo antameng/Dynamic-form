@@ -8,7 +8,7 @@ export interface FormItem {
   parent: FormItem | null
 }
 
-export function createFormItem(formItemType: FormItem['type'], payload: FormItem['payload'], next: FormItem['next'], parent: FormItem['parent']) {
+export function createFormItem(formItemType: FormItem['type'], payload: FormItem['payload'], next?: FormItem['next'], parent?: FormItem['parent']) {
   if (!next)
     next = () => null
   if (!parent)

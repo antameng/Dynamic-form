@@ -24,6 +24,6 @@ function getNext(): FormItem | null {
       123
     </el-formItem>
 
-    <Df :form-state="getNext()" />
+    <Dform :form-state="getNext()" />
   </template>
 </template>
